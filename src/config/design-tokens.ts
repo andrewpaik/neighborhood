@@ -1,0 +1,48 @@
+export const colors = {
+  sage: {
+    50: '#f6f7f4',
+    100: '#e8ebe3',
+    200: '#d1d7c7',
+    300: '#b3bda2',
+    400: '#94a17d',
+    500: '#778662',
+    600: '#5d6b4d',
+    700: '#49533e',
+    800: '#3c4434',
+    900: '#33392e',
+  },
+  terracotta: {
+    50: '#fdf6f0',
+    100: '#fbeadb',
+    200: '#f6d2b6',
+    300: '#efb388',
+    400: '#e68e58',
+    500: '#df7337',
+    600: '#d15a2c',
+    700: '#ae4526',
+    800: '#8b3925',
+    900: '#723221',
+  },
+  warmgray: {
+    50: '#faf9f7',
+    100: '#f3f1ed',
+    200: '#e8e4dd',
+    300: '#d5cfc5',
+    400: '#b8b0a2',
+    500: '#9e9485',
+    600: '#8a7f71',
+    700: '#736a5e',
+    800: '#605950',
+    900: '#514c44',
+  },
+  neighborhood: '#778662',
+  mission: '#df7337',
+  hangout: '#4a90a4',
+  chat: '#6b7280',
+} as const;
+
+export const fonts = {
+  display: 'var(--font-dm-sans)',
+  body: 'var(--font-dm-sans)',
+  accent: 'var(--font-caveat)',
+} as const;

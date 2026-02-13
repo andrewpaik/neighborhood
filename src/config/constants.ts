@@ -1,0 +1,12 @@
+export const WAITLIST_COLLECTION = 'waitlist_signups';
+export const QUIZ_RESPONSES_COLLECTION = 'quiz_responses';
+export const MIN_NEIGHBORHOOD_SIZE = 40;
+export const MAX_NEIGHBORHOOD_SIZE = 50;
+export const LAUNCH_THRESHOLD = 200;
+export const QUIZ_QUESTION_COUNT = 10;
+export const USERS_COLLECTION = 'users';
+export const NEIGHBORHOODS_COLLECTION = 'neighborhoods';
+export const MISSIONS_COLLECTION = 'missions';
+export const MISSION_SUBMISSIONS_COLLECTION = 'mission_submissions';
+export const HANGOUTS_COLLECTION = 'hangouts';
+export const CHAT_MESSAGES_COLLECTION = 'chat_messages';

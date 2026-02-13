@@ -1,0 +1,114 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  /* shadcn semantic color mappings */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  /* Radius */
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+
+  /* Fonts */
+  --font-sans: var(--font-dm-sans);
+  --font-accent: var(--font-caveat);
+
+  /* ===== Neighborhood Custom Colors ===== */
+
+  /* Sage greens — primary */
+  --color-sage-50: #f6f7f4;
+  --color-sage-100: #e8ebe3;
+  --color-sage-200: #d1d7c7;
+  --color-sage-300: #b3bda2;
+  --color-sage-400: #94a17d;
+  --color-sage-500: #778662;
+  --color-sage-600: #5d6b4d;
+  --color-sage-700: #49533e;
+  --color-sage-800: #3c4434;
+  --color-sage-900: #33392e;
+
+  /* Terracotta — accent */
+  --color-terracotta-50: #fdf6f0;
+  --color-terracotta-100: #fbeadb;
+  --color-terracotta-200: #f6d2b6;
+  --color-terracotta-300: #efb388;
+  --color-terracotta-400: #e68e58;
+  --color-terracotta-500: #df7337;
+  --color-terracotta-600: #d15a2c;
+  --color-terracotta-700: #ae4526;
+  --color-terracotta-800: #8b3925;
+  --color-terracotta-900: #723221;
+
+  /* Warm grays — neutral */
+  --color-warmgray-50: #faf9f7;
+  --color-warmgray-100: #f3f1ed;
+  --color-warmgray-200: #e8e4dd;
+  --color-warmgray-300: #d5cfc5;
+  --color-warmgray-400: #b8b0a2;
+  --color-warmgray-500: #9e9485;
+  --color-warmgray-600: #8a7f71;
+  --color-warmgray-700: #736a5e;
+  --color-warmgray-800: #605950;
+  --color-warmgray-900: #514c44;
+
+  /* Semantic */
+  --color-neighborhood: #778662;
+  --color-mission: #df7337;
+  --color-hangout: #4a90a4;
+}
+
+:root {
+  --radius: 0.625rem;
+  --background: #faf9f7;
+  --foreground: #514c44;
+  --card: #f3f1ed;
+  --card-foreground: #514c44;
+  --popover: #faf9f7;
+  --popover-foreground: #514c44;
+  --primary: #778662;
+  --primary-foreground: #f6f7f4;
+  --secondary: #f6d2b6;
+  --secondary-foreground: #723221;
+  --muted: #e8e4dd;
+  --muted-foreground: #8a7f71;
+  --accent: #fbeadb;
+  --accent-foreground: #ae4526;
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: #e8e4dd;
+  --input: #e8e4dd;
+  --ring: #778662;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
